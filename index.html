@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEONPLAY - Rede Gamer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- TOP NAV (estilo Facebook) -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <div class="logo">NEONPLAY</div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar no NEONPLAY">
+            </div>
+
+            <div class="nav-icons">
+                <a href="#" class="active"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-gamepad"></i></a>
+                <a href="#"><i class="fas fa-users"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <div class="profile-nav">
+                <img src="https://i.pravatar.cc/150?img=68" alt="Perfil">
+                <span>ShadowByte</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar">
+            <div class="sidebar-item">
+                <img src="https://i.pravatar.cc/150?img=68" alt="">
+                <span>ShadowByte</span>
+            </div>
+            <div class="sidebar-item"><i class="fas fa-gamepad"></i> <span>Jogos</span></div>
+            <div class="sidebar-item"><i class="fas fa-trophy"></i> <span>Conquistas</span></div>
+            <div class="sidebar-item"><i class="fas fa-users"></i> <span>Clãs e Grupos</span></div>
+            <div class="sidebar-item"><i class="fas fa-stream"></i> <span>Lives</span></div>
+            <div class="sidebar-item"><i class="fas fa-clock"></i> <span>Memórias</span></div>
+        </aside>
+
+        <!-- MAIN FEED -->
+        <main class="feed">
+            
+            <!-- STORIES -->
+            <div class="stories">
+                <div class="story" onclick="openStory(0)">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="">
+                    <span>Seu story</span>
+                </div>
+                <div class="story" onclick="openStory(1)">
+                    <img src="https://i.pravatar.cc/150?img=65" alt="">
+                    <span>KratosBR</span>
+                </div>
+                <div class="story" onclick="openStory(2)">
+                    <img src="https://i.pravatar.cc/150?img=47" alt="">
+                    <span>PixelNinja</span>
+                </div>
+                <div class="story" onclick="openStory(3)">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="">
+                    <span>LunaVoid</span>
+                </div>
+                <div class="story" onclick="openStory(4)">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <span>RageQueen</span>
+                </div>
+            </div>
+
+            <!-- CREATE POST -->
+            <div class="create-post card">
+                <div class="create-header">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="">
+                    <input type="text" placeholder="No que você está pensando, ShadowByte?">
+                </div>
+                <div class="create-actions">
+                    <button><i class="fas fa-image" style="color:#00ff88"></i> Foto/Vídeo</button>
+                    <button><i class="fas fa-gamepad" style="color:#ff00ff"></i> Jogo</button>
+                    <button><i class="fas fa-smile" style="color:#ffcc00"></i> Sentimento</button>
+                </div>
+            </div>
+
+            <!-- POSTS -->
+            <div class="post card">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/150?img=65" alt="">
+                    <div>
+                        <h4>KratosBR</h4>
+                        <small>há 35 minutos • God of War</small>
+                    </div>
+                </div>
+                <p>Finalmente terminei o Valhalla no God of War Ragnarök. Que jogo absurdo! Alguém mais platino?</p>
+                <img src="https://images.unsplash.com/photo-1616588587683-2d6e0e5f8f5f?w=800" alt="God of War" class="post-image">
+                <div class="post-stats">1.2K curtidas • 87 comentários</div>
+                <div class="post-actions">
+                    <button class="like-btn"><i class="fas fa-heart"></i> Curtir</button>
+                    <button><i class="fas fa-comment"></i> Comentar</button>
+                    <button><i class="fas fa-share"></i> Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="post card">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/150?img=47" alt="">
+                    <div>
+                        <h4>PixelNinja</h4>
+                        <small>há 2 horas • League of Legends</small>
+                    </div>
+                </div>
+                <p>Subi para Platina 2 hoje! Yasuo ainda tá forte demais kkkk</p>
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800" alt="LoL" class="post-image">
+                <div class="post-stats">874 curtidas • 64 comentários</div>
+                <div class="post-actions">
+                    <button class="like-btn"><i class="fas fa-heart"></i> Curtir</button>
+                    <button><i class="fas fa-comment"></i> Comentar</button>
+                    <button><i class="fas fa-share"></i> Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="post card">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="">
+                    <div>
+                        <h4>LunaVoid</h4>
+                        <small>há 5 horas • Cyberpunk 2077</small>
+                    </div>
+                </div>
+                <p>Night City nunca dorme... Roleplay insano hoje com a galera!</p>
+                <div class="post-image" style="background: linear-gradient(#220033, #001122); height: 380px; display:flex; align-items:center; justify-content:center; font-size:28px; color:#00ffff;">
+                    🌃 NIGHT CITY VIBES
+                </div>
+                <div class="post-stats">2.1K curtidas • 142 comentários</div>
+                <div class="post-actions">
+                    <button class="like-btn"><i class="fas fa-heart"></i> Curtir</button>
+                    <button><i class="fas fa-comment"></i> Comentar</button>
+                    <button><i class="fas fa-share"></i> Compartilhar</button>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="post card">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <div>
+                        <h4>RageQueen</h4>
+                        <small>há 7 horas • Valorant</small>
+                    </div>
+                </div>
+                <p>5K de headshots hoje... Reyna tá quebrada nessa patch 🔥</p>
+                <img src="https://images.unsplash.com/photo-1542546068979-9c3c2d3d0d5b?w=800" alt="Valorant" class="post-image">
+                <div class="post-stats">653 curtidas • 45 comentários</div>
+                <div class="post-actions">
+                    <button class="like-btn"><i class="fas fa-heart"></i> Curtir</button>
+                    <button><i class="fas fa-comment"></i> Comentar</button>
+                    <button><i class="fas fa-share"></i> Compartilhar</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+            <div class="card">
+                <h3>Amigos Online (12)</h3>
+                <div class="online-list">
+                    <div class="online-item"><span class="online-dot"></span> NeonReaper</div>
+                    <div class="online-item"><span class="online-dot"></span> VandalGod</div>
+                    <div class="online-item"><span class="online-dot"></span> GhostByte</div>
+                    <div class="online-item"><span class="online-dot"></span> SovaMain</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Clãs Sugeridos</h3>
+                <p><strong>Phantom Legion</strong> — Valorant • 1.8k membros</p>
+                <p><strong>Neo Ronin</strong> — Cyberpunk RP • 943 membros</p>
+                <p><strong>Pixel Lords</strong> — League of Legends • 2.4k membros</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- STORY MODAL -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeStory()">×</span>
+            <div id="storyViewer"></div>
+        </div>
+    </div>
+
+    <script>
+        // Like buttons
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('liked');
+            });
+        });
+
+        // Story Modal
+        function openStory(id) {
+            const modal = document.getElementById('storyModal');
+            const viewer = document.getElementById('storyViewer');
+            
+            const stories = [
+                "<h2>Seu Story</h2><p>Acabei de jogar 5 partidas ranqueadas!</p><img src='https://i.pravatar.cc/600?img=68' style='width:100%; border-radius:12px;'>",
+                "<h2>KratosBR</h2><p>Valhalla completado! 🔥</p><img src='https://images.unsplash.com/photo-1616588587683-2d6e0e5f8f5f?w=800' style='width:100%; border-radius:12px;'>",
+                "<h2>PixelNinja</h2><p>15-3 de Yasuo hoje kkk</p>",
+                "<h2>LunaVoid</h2><p>Night City nunca para...</p>",
+                "<h2>RageQueen</h2><p>Hoje é dia de destruir no Valorant!</p>"
+            ];
+            
+            viewer.innerHTML = stories[id];
+            modal.style.display = "flex";
+        }
+
+        function closeStory() {
+            document.getElementById('storyModal').style.display = "none";
+        }
+    </script>
+</body>
+</html>
